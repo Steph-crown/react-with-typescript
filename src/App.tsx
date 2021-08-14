@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { List } from './component/List';
-import AppInterface from './interface';
+import {AppInterface} from './interface';
+import { AddToList } from './component/AddToList';
 
 interface IState {
     people: AppInterface["people"]
@@ -30,6 +30,7 @@ export default function App() {
         <div className="App">
             <h1>People invited to our Party</h1>
             <List people={people} />
+            <AddToList people={people} setPeople={setPeople} />
         </div>
     );
 }

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import AppInterface from "../interface";
+import {AppInterface} from "../interface";
 
 
 interface IProps {
