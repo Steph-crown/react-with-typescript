@@ -34,7 +34,13 @@ export const AddToList: FC<Props> = ({people, setPeople}) => {
     }
 
     const handleClick = (): void => {
-        // const newPeople = people.push(input)
+        if (
+            !input.img &&
+            !input.age &&
+            !input.img
+        ) {
+            return
+        }
         setPeople([
             ...people,
             {
@@ -43,7 +49,13 @@ export const AddToList: FC<Props> = ({people, setPeople}) => {
                 url: "",
                 note: ""
             }
-        ])
+        ]);
+        setInput({
+            name: "",
+            age: "",
+            note: "",
+            img: ""
+        })
     }
 
     return (

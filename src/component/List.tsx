@@ -8,8 +8,8 @@ interface IProps {
 
 export const List: FC<IProps> = ({people}) => {
     const renderList = (): JSX.Element[] => {
-        return people.map(person => (
-            <li className="List">
+        return people.map((person, index) => (
+            <li className="List" key={index + "lll"}>
                 <div className="List-header">
                     <img alt="" src={person.url} className="List-img" />
                     <h2>{person.name}</h2>

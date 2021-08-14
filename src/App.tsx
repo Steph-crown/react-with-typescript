@@ -17,7 +17,7 @@ export default function App() {
             note: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis ad ducimus labore quam quod odio rerum corporis."
         },
         {
-            name: "LeBron James",
+            name: "LeBronJames",
             age: 32,
             url: "https://fullpresscoverage.com/wp-content/uploads/2020/01/101524695-457220551.jpg",
             note: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis ad ducimus labore quam quod odio rerum corporis."
